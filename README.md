@@ -22,19 +22,8 @@ Documents implemented sections
 States its compatibility guarantees
 Consumers should not treat implementations as normative
 
-
-Design Principles
-
-Specification‑First: Consult the spec, document interpretations, regenerate artifacts.
-Reproducible by Design: Everything must be rebuildable from declared inputs.
-Clear Boundaries: Specs define what, libraries define how, tools define how consistently.
-Honest Provenance: Generated vs. hand‑refined vs. model‑assisted is always explicit.
-Stability Grades: Libraries declare their maturity (Experimental, Production, Reference).
-
-
 Versioning Model
 
-Libraries use semantic versioning.
 Specs are referenced explicitly.
 Updates occur due to spec changes, improved processes, or interpretation fixes.
 Library version numbers do not imply authority over the spec.
