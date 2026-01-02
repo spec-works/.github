@@ -1,6 +1,6 @@
 ## SpecWorks
 
-This GitHub organization is intended for hosting reusable software components, generated using LLM based tooling from publicly available specifications.
+The SpecWorks factory uses AI tooling to materialize software parts directly from their specifications. This GitHub organization is intended for hosting repositories that represent software parts.
 
 ### Goals
 
