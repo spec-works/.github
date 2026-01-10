@@ -1,0 +1,31 @@
+name: Rust Test
+
+on:
+  push:
+    branches: [ main, master ]
+    paths:
+      - 'vCard/rust/**'
+      - '.github/workflows/rust-test.yml'
+  pull_request:
+    branches: [ main, master ]
+    paths:
+      - 'vCard/rust/**'
+      - '.github/workflows/rust-test.yml'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Rust
+      uses: actions-rust-lang/setup-rust-toolchain@v1
+
+    - name: Build
+      working-directory: vCard/rust
+      run: cargo build --verbose
+
+    - name: Run tests
+      working-directory: vCard/rust
+      run: cargo test --verbose
